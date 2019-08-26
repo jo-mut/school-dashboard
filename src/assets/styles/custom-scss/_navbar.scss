@@ -1,0 +1,12 @@
+#custom-navbar {
+    border-top: 2px solid $bg-secondary;
+    background-color: $bg-primary-white;
+    height: 4em;
+    color: $font-color;
+    li a {
+        color: $font-color;
+    }
+    li a:hover {
+        color: $active-link-blue;
+    }
+}
