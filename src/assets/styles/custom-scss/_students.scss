@@ -1,7 +1,17 @@
-.students {
+.students-list {
+    .card {
+        border: none;
+        border-bottom: solid 2px $font-color;
+    }
     .student {
         img {
             width: 100%;
+        }
+        .year,
+        .department,
+        .subject,
+        .attendance {
+            font-style: italic;
         }
     }
 }

@@ -1,0 +1,22 @@
+#sidebar {
+    color: $primary-white;
+    a {
+        color: $primary-white;
+    }
+    li a:hover {
+        color: $font-color;
+    }
+    li:hover {
+        background: $bg-primary;
+    }
+    .sidebar-title {
+        height: 4em;
+    }
+    hr {
+        border: 0.04em solid $primary-white;
+    }
+}
+
+.main-wrapper {
+    background-color: $bg-primary;
+}

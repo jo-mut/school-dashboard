@@ -1,7 +1,16 @@
-.departments {
+.departments-list {
+    .card {
+        border: none;
+        border-bottom: solid 2px $font-color;
+    }
     .department {
         img {
             width: 100%;
+        }
+        .professors,
+        .students,
+        .sub-departments {
+            font-style: italic;
         }
     }
 }

@@ -1,23 +1,28 @@
 <nav class="navbar navbar-expand-sm navbar-dark" id="custom-navbar">
-    <p class="active-sidebar-link"> <i class="fa fa-bars mr-3"></i> Dashboard</p>
+    <p class="active-sidebar-link"> <i class="fa fa-bars m-3"></i> Dashboard</p>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav bg-white ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Search<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><i class="fa fa-search mx-3"></i><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="notificationId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notifications</a>
+                <a class="nav-link dropdown-toggle" href="#" id="notificationId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-bell mx-3"></i>
+                </a>
                 <div class="dropdown-menu" aria-labelledby="notificationId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
+                    <ul class="list-unstyled">
+                        <a class="dropdown-item p-3" href="#" *ngFor="let notification of notificationData()">{{notification.text}}</a>
+                    </ul>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="profileId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+                <a class="nav-link dropdown-toggle" href="#" id="profileId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="{{assets/images/img.jpg}}" class="mx-3" alt=""></a>
                 <div class="dropdown-menu" aria-labelledby="profileId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
+                    <a class="dropdown-item" routerLink="profile">Profile</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                    <a class="dropdown-item" href="#">Settings</a>
                 </div>
             </li>
         </ul>

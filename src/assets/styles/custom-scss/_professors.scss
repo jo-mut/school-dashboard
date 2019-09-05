@@ -1,7 +1,16 @@
-.professors {
+.professors-list {
+    .card {
+        border: none;
+        border-bottom: solid 2px $font-color;
+    }
     .professor {
         img {
             width: 100%;
+        }
+        .age,
+        .department,
+        .attendance {
+            font-style: italic;
         }
     }
 }

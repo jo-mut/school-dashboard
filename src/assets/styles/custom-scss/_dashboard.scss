@@ -1,0 +1,44 @@
+.dashboard {
+    .card {
+        border-bottom: solid 2px $font-color;
+    }
+    .departments,
+    .professors,
+    .students,
+    .workers,
+    .courses,
+    .sub-departments {
+        text-align: center;
+        .rule {
+            border-bottom: solid 2px $font-color;
+        }
+    }
+    .perfomance-bars {
+        .progress {
+            height: 0.5em;
+        }
+        .classOf2015 {
+            .progress-bar {
+                background-color: orange;
+            }
+        }
+        .classOf2016 {
+            .progress-bar {
+                background-color: rgb(83, 170, 12);
+            }
+        }
+        .classOf2017 {
+            .progress-bar {
+                background-color: rgb(48, 70, 7);
+            }
+        }
+        .classOf2018 {
+            .progress-bar {
+                background-color: rgb(54, 32, 6);
+            }
+        }
+    }
+    .stream-dv {
+        height: 300px;
+    }
+}

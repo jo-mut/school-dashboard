@@ -1,12 +1,12 @@
 <div class="library mt-3">
     <div class="card">
-        <div class="card-img-top img-fluid">
+        <div class="img-thumbnail img-fluid">
             <img src="{{libraryItem.image}}" alt="">
         </div>
         <div class="card-body info">
-            <p class="mb-0"><strong>{{libraryItem.name}}</strong></p>
-            <p class="mb-0">{{libraryItem.type}}</p>
-            <p class="mb-0">{{libraryItem.count}}</p>
+            <p class="mb-0 name"><strong>{{libraryItem.name}}</strong></p>
+            <p class="mb-0 item">Type of item:<span class="ml-3">{{libraryItem.type}}</span></p>
+            <p class="mb-0 item-count">Count of items: <span class="ml-3">{{libraryItem.count}}</span></p>
         </div>
     </div>
 </div>

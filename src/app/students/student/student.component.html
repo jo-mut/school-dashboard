@@ -1,14 +1,14 @@
 <div class="student mt-3">
     <div class="card">
-        <div class="card-img-top img-fluid">
+        <div class="img-thumbnail img-fluid">
             <img src="{{student.image}}" alt="">
         </div>
         <div class="card-body info">
-            <p class="mb-0"><strong>{{student.name}}</strong></p>
-            <p class="mb-0">{{student.year}}</p>
-            <p class="mb-0">{{student.department}}</p>
-            <p class="mb-0">{{student.subject}}</p>
-            <p class="mb-0">{{student.attendance}}</p>
+            <p class="mb-0 name"><strong>{{student.name}}</strong></p>
+            <p class="mb-0 year">Year:<span class="ml-3">{{student.year}}</span></p>
+            <p class="mb-0 department">Department:<span class="ml-3">{{student.department}}</span></p>
+            <p class="mb-0 subject">Subject:<span class="ml-3">{{student.subject}}</span></p>
+            <p class="mb-0 attendance">Attendance:<span class="ml-3">{{student.attendance}}</span></p>
         </div>
     </div>
 </div>

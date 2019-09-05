@@ -1,7 +1,26 @@
-.app {
-    border-radius: 0px;
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
     background: $bg-primary;
     color: $font-color;
     height: 100%;
     min-height: 100vh;
+    .sidebar-wrapper {
+        background-color: $bg-secondary;
+        min-height: 100vh;
+        max-height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+        width: 260px;
+    }
+    .main-panel {
+        width: 100%;
+        flex-grow: 1;
+        margin-left: 260px;
+    }
 }

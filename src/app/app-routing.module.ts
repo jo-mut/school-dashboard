@@ -18,6 +18,7 @@ const routes: Routes = [
     {path: 'students', component: StudentsListComponent},
     {path: 'library', component: LibraryListItemsComponent},
     {path: 'workers', component: WorkersListsComponent},
+    {path: 'profile', component: ProfileComponent},
     {path: 'sign-in', component: SignInComponent},
     {path: 'sign-up', component: SignUpComponent}
 
@@ -33,5 +34,5 @@ const routes: Routes = [
     StudentsListComponent, ProfessorsListComponent, SignInComponent,
     SignUpComponent,LibraryListItemsComponent, WorkersListsComponent,
     DepartmentsListComponent, LibraryListItemsComponent, 
-    StudentsListComponent, WorkersListsComponent
+    StudentsListComponent, WorkersListsComponent, ProfileComponent
 ]

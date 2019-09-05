@@ -4,112 +4,47 @@
         "image": "assets/images/img.jpg",
         "students": "300",
         "professors": "10",
-        "sub_departments": "5"
+        "courses": "12",
+        "sub_departments": "3"
     },
     {
-        "id": "1",
-        "name": "School of Medicine",
+        "id": "2",
+        "name": "School of Business",
         "image": "assets/images/img.jpg",
-        "students": "300",
+        "students": "500",
         "professors": "10",
+        "courses": "20",
         "sub_departments": "5"
     }, {
-        "id": "1",
-        "name": "School of Medicine",
+        "id": "3",
+        "name": "School of Mathematics",
         "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
+        "students": "150",
+        "professors": "4",
+        "courses": "10",
         "sub_departments": "5"
     }, {
-        "id": "1",
-        "name": "School of Medicine",
+        "id": "4",
+        "name": "School of Arts",
         "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
+        "students": "600",
+        "professors": "15",
+        "courses": "30",
+        "sub_departments": "6"
     }, {
-        "id": "1",
-        "name": "School of Medicine",
+        "id": "5",
+        "name": "School of Law",
         "image": "assets/images/img.jpg",
-        "students": "300",
+        "students": "200",
         "professors": "10",
-        "sub_departments": "5"
+        "courses": "6",
+        "sub_departments": "4"
     }, {
-        "id": "1",
-        "name": "School of Medicine",
+        "id": "6",
+        "name": "School of Engineering",
         "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
-        "sub_departments": "5"
-    }, {
-        "id": "1",
-        "name": "School of Medicine",
-        "image": "assets/images/img.jpg",
-        "students": "300",
-        "professors": "10",
+        "students": "450",
+        "professors": "20",
         "sub_departments": "5"
     }
 ]

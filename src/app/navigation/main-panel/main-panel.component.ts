@@ -6,10 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-panel.component.scss']
 })
 export class MainPanelComponent implements OnInit {
+  public visibilityClass: string = "";
 
   constructor() { }
 
   ngOnInit() {
+    this.hideShowSidebar()
+  }
+
+  isMobileMenu(): boolean {
+    if (window.innerWidth > 991) {
+      return false;
+    }
+    return true;
+  }
+
+  hideShowSidebar(){
+    if(this.isMobileMenu()) {
+      console.log("mobile menu")
+      this.visibilityClass = "width: 0px";
+    } else {
+      console.log("not mobile menu")
+      this.visibilityClass = "width: 260px";
+    }
   }
 
 }

@@ -1,0 +1,52 @@
+.profile {
+    .card {
+        height: 100%;
+        border: none;
+        border-bottom: solid 2px $font-color;
+    }
+    .profile-info {
+        img {
+            width: 100%;
+        }
+        .edit-bio,
+        .edit-contacts,
+        .edit-names {
+            font-weight: bold;
+            color: $blue-font-color;
+        }
+    }
+    .profile-form {
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: solid 0.05em $font-color;
+        }
+    }
+    .inbox {
+        height: 100%;
+        .row,
+        .container-fluid {
+            height: 100%;
+            .chats {
+                height: 100%;
+                border-right: solid 1px $font-color;
+            }
+        }
+    }
+}
+
+.mail {
+    hr {
+        border: solid 0.05em $font-color;
+    }
+    .profile-image {
+        img {
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+        }
+    }
+    .name {
+        font-weight: bold;
+    }
+}

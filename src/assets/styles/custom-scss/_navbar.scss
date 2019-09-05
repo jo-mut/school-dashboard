@@ -3,6 +3,11 @@
     background-color: $bg-primary-white;
     height: 4em;
     color: $font-color;
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
     li a {
         color: $font-color;
     }

@@ -1,0 +1,29 @@
+.sign-up {
+    margin-top: 200px;
+    .form {
+        padding: 2em;
+        width: 400px;
+        margin: 0 auto;
+        background-color: $bg-primary-white;
+        input {
+            width: 100%;
+            background-color: transparent;
+            border-radius: 10px;
+            border: solid 0.05em $primary-grey;
+        }
+        button {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .sign-with {
+        .btn-group {
+            width: 100%;
+        }
+        i {
+            color: $font-color;
+            padding: 0.5em;
+            font-size: 2em;
+        }
+    }
+}

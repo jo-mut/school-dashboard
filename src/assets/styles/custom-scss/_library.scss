@@ -3,5 +3,12 @@
         img {
             width: 100%;
         }
+        .item,
+        .item-count {
+            font-style: italic;
+        }
+        .card {
+            border: transparent;
+        }
     }
 }

@@ -1,7 +1,16 @@
-.workers {
+.workers-list {
+    .card {
+        border: none;
+        border-bottom: solid 2px $font-color;
+    }
     .worker {
         img {
             width: 100%;
+        }
+        .age,
+        .department,
+        .attendance {
+            font-style: italic;
         }
     }
 }

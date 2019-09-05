@@ -18,6 +18,9 @@ import { StudentsService } from './services/students.service';
 import { LibraryService } from './services/library.service';
 import { ProfessorsService } from './services/professors.service';
 import { WorkerService } from './services/worker.service';
+import { MainPanelComponent } from './navigation/main-panel/main-panel.component';
+import { MailComponent } from './profile/mail/mail.component';
+import { MailDetailComponent } from './profile/mail-detail/mail-detail.component';
 
 
 @NgModule({
@@ -26,13 +29,16 @@ import { WorkerService } from './services/worker.service';
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
+    MainPanelComponent,
     RoutingComponents,
     ProfessorComponent,
     StudentComponent, 
     ProfileComponent,
     WorkerComponent,
     DepartmentItemComponent,
-    LibraryItemComponent    
+    LibraryItemComponent,
+    MailComponent,
+    MailDetailComponent    
   ],
   imports: [
     BrowserModule,
