@@ -21,7 +21,9 @@ export class NavbarComponent implements OnInit {
   private lorem: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
   Incidunt quibusdam praesentium nostrum molestias illum delectus exercitationem 
   voluptatem facere provident cumque ad autem temporibus est sed, laborum 
-  perspiciatis, sunt, optio et?`
+  perspiciatis, sunt, optio et?`;
+  private profileImage = "assets/images/img.jpg";
+
 
   constructor() {
 
@@ -43,7 +45,7 @@ export class NavbarComponent implements OnInit {
       new Notification(9, 'assets/images/img.jpg', this.lorem, true),
     )
 
-    return notifications;
+    return notifications.slice(0, 3);
   }
 
   showHideSidebar() {

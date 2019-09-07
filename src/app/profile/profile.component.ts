@@ -21,11 +21,10 @@ export class Mail {
 export class ProfileComponent implements OnInit {
 
   private lorem: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Incidunt quibusdam praesentium nostrum molestias illum delectus exercitationem 
-  voluptatem facere provident cumque ad autem temporibus est sed, laborum 
-  perspiciatis, sunt, optio et?`
+  Incidunt quibusdam praesentium...`
   private time: number = Date.now();
   private profileImage = "assets/images/img.jpg";
+
 
   constructor() { }
 
@@ -48,6 +47,10 @@ export class ProfileComponent implements OnInit {
     )
 
     return mails;
+  }
+
+  private mailCount(): number {
+    return this.profileMails().length;
   }
 
   ngOnInit() {

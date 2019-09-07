@@ -1,9 +1,13 @@
 .sign-up {
     margin-top: 200px;
-    .form {
-        padding: 2em;
+    .card {
         width: 400px;
+        border: none;
         margin: 0 auto;
+        border-bottom: solid 2px $font-color;
+        padding: 2em;
+    }
+    .form {
         background-color: $bg-primary-white;
         input {
             width: 100%;

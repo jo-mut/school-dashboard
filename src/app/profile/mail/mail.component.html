@@ -1,14 +1,12 @@
-<div class="mail">
-    <div class="profile-image">
-        <img src="{{mail.sender[0]}}" alt="">
-    </div>
-    <div class="">
-        <div class="name">
-            {{mail.sender[1]}}
-        </div>
-        <div class="mail-text">
-            {{mail.text}}
-        </div>
-    </div>
-    <hr class="m-3">
-</div>
+<table class="table">
+    <tbody>
+        <tr class="mail">
+            <td class="pt-2 pb-0 d-flex">
+                <img class="mail-image mr-1" src="{{mail.sender[0]}}" alt="">
+                <div class="mail-body">
+                    <p class="mb-0"><strong class="mail-sender mx-1">{{mail.sender[1]}}</strong>{{mail.text}}</p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,5 +1,19 @@
 .dashboard {
+    max-height: 100vh;
+    overflow-y: scroll;
+    .disable-scrollbars {
+        width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE 10+ */
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+            /* Chrome/Safari/Webkit */
+        }
+    }
     .card {
+        height: 100%;
         border-bottom: solid 2px $font-color;
     }
     .departments,
@@ -40,5 +54,68 @@
     }
     .stream-dv {
         height: 300px;
+    }
+    .intake {
+        background-color: $bg-secondary;
+        color: whitesmoke;
+        .title {
+            font-size: 1.5em;
+        }
+    }
+    .revenue {
+        color: whitesmoke;
+        background-color: $bg-secondary;
+        .title {
+            font-size: 1.5em;
+        }
+    }
+    .event {
+        height: 100%;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .participants,
+        .time,
+        .venue {
+            font-style: italic;
+            color: $blue-font-color;
+        }
+    }
+    .activity {
+        height: 100%;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .time,
+        .deadline {
+            font-style: italic;
+            color: $blue-font-color;
+        }
+    }
+    .project {
+        height: 100%;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .time,
+        .deadline {
+            font-style: italic;
+            color: $blue-font-color;
+        }
+    }
+    .award {
+        height: 100%;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .time,
+        .deadline {
+            font-style: italic;
+            color: $blue-font-color;
+        }
     }
 }

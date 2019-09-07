@@ -1,46 +1,50 @@
 <div class="dashboard">
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <h5 class="mb-0">Students</h5>
-                    <hr class="m-1">
-                    <p class="mb-0">22,000</p>
+            <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                <div class="card p-3 text-center">
+                    <h3 class="mb-0">22,000</h3>
+                    <p class="mb-0">Students</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <h5 class="mb-0">Graduates</h5>
-                    <hr class="m-1">
-                    <p class="mb-0">5,000</p>
+            <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                <div class="card p-3 text-center">
+                    <h3 class="mb-0">5,000</h3>
+                    <p class="mb-0">Graduates</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <h5 class="mb-0">Workers</h5>
-                    <hr class="m-1">
-                    <p class="mb-0">150</p>
+            <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                <div class="card p-3 text-center">
+                    <h3 class="mb-0">60</h3>
+                    <p class="mb-0">Courses</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <h5 class="mb-0">Courses</h5>
-                    <hr class="m-1">
-                    <p class="mb-0">60</p>
+            <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 p-3 intake text-center">
+                            <p class="mb-0 title">Intake</p>
+                            <p class="mb-0 count">2,500</p>
+                        </div>
+                        <div class="col-md-6 p-3 revenue text-center">
+                            <p class="mb-0 title">Revenue</p>
+                            <p class="mb-0 profit">Ksh 5.2m</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid mt-3">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-sm-12 col-md-8">
                 <div class="card">
                     <div class="">
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-12 col-md-4">
                 <div class="card">
                     <div class="perfomance">
                         <div class="perfomance-title p-3">
@@ -85,37 +89,116 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-8 mt-3">
                 <div class="card">
-                    <div class="container-fluid">
-
+                    <div class="pl-3 pt-3">
+                        <h5>School Projects</h5>
+                    </div>
+                    <hr class="m-2">
+                    <ul class="list-unstyled p-3">
+                        <li *ngFor="let project of projects">
+                            <div class="project">
+                                <div class="container-fluid d-flex p-0">
+                                    <img class="project-image mx-3" src="{{project.image}}" alt="">
+                                    <div class="project-info">
+                                        <h5 class="name mb-0">{{project.name}}</h5>
+                                        <p class="description mb-0">{{project.description}}</p>
+                                        <small class="time mb-0">Time: {{project.time}}</small>
+                                        <small class="venue mb-0 mx-3">Venue: {{project.venue}}</small>
+                                        <small class="deadline mb-0 mx-3">Deadline: {{project.deadline}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="show-all p-2">
+                        <span class="pull-right"><a href=""> Show all {{projects.length}} events</a></span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="card">
-                    Awards
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    Projects
+                    <div class="pl-3 pt-3">
+                        <h5>School Awards</h5>
+                    </div>
+                    <hr class="m-2">
+                    <ul class="list-unstyled p-3">
+                        <li *ngFor="let award of awards">
+                            <div class="award">
+                                <div class="container-fluid d-flex p-0">
+                                    <img class="award-image mx-3" src="{{award.image}}" alt="">
+                                    <div class="award-info">
+                                        <h5 class="name mb-0">{{award.name}}</h5>
+                                        <p class="description mb-0">{{award.description}}</p>
+                                        <small class="time mb-0">Time: {{award.time}}</small>
+                                        <small class="deadline mb-0 mx-3">Venue: {{award.venue}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="show-all p-2">
+                        <span class="pull-right"><a href=""> Show all {{awards.length}} events</a></span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="card">
-                    Events
+                    <div class="pl-3 pt-3">
+                        <h5>School Events</h5>
+                    </div>
+                    <hr class="m-2">
+                    <ul class="list-unstyled ">
+                        <li *ngFor="let event of events" class="mt-2">
+                            <div class="event">
+                                <div class="container-fluid d-flex p-0">
+                                    <img class="event-image mx-3" src="{{event.image}}" alt="">
+                                    <div class="event-info">
+                                        <h5 class="name mb-0">{{event.name}}</h5>
+                                        <p class="description mb-0">{{event.description}}</p>
+                                        <p class="participants mb-0"><small>Participation: {{event.participants}}</small></p>
+                                        <p class="time mb-0"><small>Time: {{event.time}}</small></p>
+                                        <p class="venue mb-0"><small>Venue: {{event.venue}}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="show-all p-2">
+                        <span class="pull-right"><a href=""> Show all {{events.length}} events</a></span>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8  mt-3">
                 <div class="card">
-                    Activities
+                    <div class="pl-3 pt-3">
+                        <h5>School Activities</h5>
+                    </div>
+                    <hr class="m-2">
+                    <ul class="list-unstyled">
+                        <li *ngFor="let activity of activities">
+                            <div class="activity">
+                                <div class="container-fluid d-flex p-0">
+                                    <img class="activity-image mx-3" src="{{activity.image}}" alt="">
+                                    <div class="activity-info">
+                                        <p class="name mb-0">{{activity.name}}</p>
+                                        <p class="description mb-0">{{activity.description}}</p>
+                                        <small class="time mb-0">Time: {{activity.time}}</small>
+                                        <small class="deadline mb-0 mx-3">Deadline: {{activity.deadline}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="show-all p-2">
+                        <span class="pull-right"><a href=""> Show all {{activities.length}} events</a></span>
+                    </div>
                 </div>
             </div>
         </div>
