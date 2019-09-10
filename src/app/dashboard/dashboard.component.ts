@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Award, Activity, Events, Project } from './dashboard.models';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,6 +9,8 @@ import { Award, Activity, Events, Project } from './dashboard.models';
 })
 export class DashboardComponent implements OnInit {
 
+  private canvas;
+  private context;
   public awards: Array<Award> = null;
   public activities: Array<Activity> = null;
   public events: Array<Events> = null;
@@ -29,6 +32,39 @@ export class DashboardComponent implements OnInit {
 
   }
 
+  public chartData(): Chart {
+    var data = {
+      labels: ['JAN','FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      datasets: [{
+        label: "Monthly operating cost",
+        fill: true,
+        // backgroundColor: gradientStroke,
+        borderColor: '#00d6b4',
+        borderWidth: 2,
+        borderDash: [],
+        borderDashOffset: 0.0,
+        pointBackgroundColor: '#00d6b4',
+        pointBorderColor: 'rgba(255,255,255,0)',
+        pointHoverBackgroundColor: '#00d6b4',
+        pointBorderWidth: 20,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 15,
+        pointRadius: 4,
+        data: [3.5, 4.0, 2.9, 3.4, 4.2, 3.9, 5.0, 4.9, 4.6, 4.1, 4.0, 2.0],
+        dat: [3.5, 4.0, 2.9, 3.4, 4.2, 3.9, 5.0, 4.9, 4.6, 4.1, 4.0, 2.0],
+
+      }]
+    };
+
+    this.canvas = document.getElementById('chart');
+    this.context = this.canvas.getContext('2d');
+    var myChart = new Chart(this.context, {
+      type: 'line',
+      data: data,
+    });
+
+    return myChart;
+  }
 
   schoolEvents() {
     const events = new Array<Events>(

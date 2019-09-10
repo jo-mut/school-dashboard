@@ -1,17 +1,16 @@
 .dashboard {
     max-height: 100vh;
-    overflow-y: scroll;
-    .disable-scrollbars {
-        width: none;
-        /* Firefox */
-        -ms-overflow-style: none;
-        /* IE 10+ */
-        &::-webkit-scrollbar {
-            width: 0px;
-            background: transparent;
-            /* Chrome/Safari/Webkit */
-        }
-    }
+    // .disable-scrollbars {
+    //     width: none;
+    //     /* Firefox */
+    //     -ms-overflow-style: none;
+    //     /* IE 10+ */
+    //     &::-webkit-scrollbar {
+    //         width: 0px;
+    //         background: transparent;
+    //         /* Chrome/Safari/Webkit */
+    //     }
+    // }
     .card {
         height: 100%;
         border-bottom: solid 2px $font-color;
