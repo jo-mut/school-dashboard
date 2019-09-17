@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { MailComponent } from './mail/mail.component';
+import { Router } from '@angular/router';
 
 export class Mail {
   constructor(
@@ -10,6 +12,10 @@ export class Mail {
     private attachment?: string
   ) {
 
+  }
+
+  get getId(): string {
+    return this.id.toString();
   }
 }
 
@@ -24,9 +30,27 @@ export class ProfileComponent implements OnInit {
   Incidunt quibusdam praesentium...`
   private time: number = Date.now();
   private profileImage = "assets/images/img.jpg";
+  @Input() mail: Mail;
 
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.firstMail();
+
+  }
+
+  private firstMail(){
+    if (this.profileMails()[0] != null) {
+      this.mail = this.profileMails()[0]
+    }
+  } 
+
+  private mailDetail(mail: Mail) {
+    if(mail != null) {
+      this.router.navigateByUrl(mail.getId);
+      this.mail = this.profileMails()[mail.getId];
+      console.log(mail.getId)
+    }
+  }
 
   private profileMails(): Array<Mail> {
     const mails = new Array<Mail>(
@@ -48,6 +72,8 @@ export class ProfileComponent implements OnInit {
 
     return mails;
   }
+
+
 
   private mailCount(): number {
     return this.profileMails().length;

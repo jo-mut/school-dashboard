@@ -32,26 +32,46 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  public chartData(): Chart {
+  private operatingCost(): Chart {
+
+    var scale: {
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 100,
+        stepSize: 20,
+        display: false,
+      },
+      pointLabels: {
+        fontSize: 14
+      },
+      angleLines: {
+        color: '#e9ebf1'
+      },
+      gridLines: {
+        color: "#e9ebf1"
+      }
+    }
+
     var data = {
       labels: ['JAN','FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
       datasets: [{
         label: "Monthly operating cost",
         fill: true,
-        // backgroundColor: gradientStroke,
-        borderColor: '#00d6b4',
+        backgroundColor: 'rgb(0, 0, 255)',
+        borderColor: 'rgb(0, 0, 255)',
         borderWidth: 2,
         borderDash: [],
         borderDashOffset: 0.0,
-        pointBackgroundColor: '#00d6b4',
+        pointBackgroundColor: 'rgb(0, 0, 255)',
         pointBorderColor: 'rgba(255,255,255,0)',
         pointHoverBackgroundColor: '#00d6b4',
         pointBorderWidth: 20,
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
+        responsive: true,
         data: [3.5, 4.0, 2.9, 3.4, 4.2, 3.9, 5.0, 4.9, 4.6, 4.1, 4.0, 2.0],
-        dat: [3.5, 4.0, 2.9, 3.4, 4.2, 3.9, 5.0, 4.9, 4.6, 4.1, 4.0, 2.0],
 
       }]
     };
@@ -61,10 +81,82 @@ export class DashboardComponent implements OnInit {
     var myChart = new Chart(this.context, {
       type: 'line',
       data: data,
+      options: scale,
+
     });
 
     return myChart;
   }
+
+  private intakes(): Chart {
+    var intakes = {
+      labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+      datasets: [{
+        label: "Student intake per year since 2010",
+        fill: true,
+        fillColor: 'rgb(0, 0, 255)',
+        // backgroundColor: gradientStroke,
+        borderColor: 'rgb(0, 0, 255)',
+        borderWidth: 2,
+        borderDash: [],
+        borderDashOffset: 0.0,
+        pointBackgroundColor: 'rgb(0, 0, 255)',
+        pointBorderColor: 'rgba(255,255,255,0)',
+        pointHoverBackgroundColor: '#00d6b4',
+        pointBorderWidth: 20,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 15,
+        pointRadius: 4,
+        responsive: true,
+        data: [3000, 4500, 2900, 3400, 4200, 3900, 5000, 4090, 4060, 4010],
+      }]
+    };
+
+    this.canvas = document.getElementById('intakes');
+    this.context = this.canvas.getContext('2d');
+    var intakeChart = new Chart(this.context, {
+      type: 'bar',
+      data: intakes,
+    });
+
+    return intakeChart;
+
+  }
+
+  private graduates(): Chart {
+    var graduates = {
+      labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+      datasets: [{
+        label: "Student intake per year since 2010",
+        fill: true,
+        // backgroundColor: gradientStroke,
+        borderColor: 'rgb(0, 0, 255)',
+        borderWidth: 2,
+        borderDash: [],
+        borderDashOffset: 0.0,
+        pointBackgroundColor: 'rgb(0, 0, 255)',
+        pointBorderColor: 'rgba(255,255,255,0)',
+        pointHoverBackgroundColor: '#00d6b4',
+        pointBorderWidth: 20,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 15,
+        pointRadius: 4,
+        responsive: true,
+        data: [300, 1000, 2900, 3000, 4000, 3500, 4100, 3490, 3060, 4010],
+      }]
+    };
+
+    this.canvas = document.getElementById('graduates');
+    this.context = this.canvas.getContext('2d');
+    var graduatesChart = new Chart(this.context, {
+      type: 'bar',
+      data: graduates,
+    });
+
+    return graduatesChart;
+
+  }
+
 
   schoolEvents() {
     const events = new Array<Events>(

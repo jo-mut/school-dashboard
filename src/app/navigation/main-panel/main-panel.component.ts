@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-panel',
@@ -6,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-panel.component.scss']
 })
 export class MainPanelComponent implements OnInit {
-  public visibilityClass: string = "";
 
   constructor() { }
 
   ngOnInit() {
-    this.hideShowSidebar()
+  
   }
 
   isMobileMenu(): boolean {
@@ -19,16 +19,6 @@ export class MainPanelComponent implements OnInit {
       return false;
     }
     return true;
-  }
-
-  hideShowSidebar(){
-    if(this.isMobileMenu()) {
-      console.log("mobile menu")
-      this.visibilityClass = "width: 0px";
-    } else {
-      console.log("not mobile menu")
-      this.visibilityClass = "width: 260px";
-    }
   }
 
 }

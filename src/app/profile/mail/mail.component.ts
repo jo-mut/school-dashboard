@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
 import { Mail } from '../profile.component';
 
 @Component({
@@ -13,6 +13,7 @@ export class MailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

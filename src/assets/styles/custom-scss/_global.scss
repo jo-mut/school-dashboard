@@ -24,3 +24,22 @@
         margin-left: 260px;
     }
 }
+
+@media (max-width: 768px) {
+    /* Reversing the behavior of the sidebar:
+    it'll be rotated vertically and off canvas by default,
+    collapsing in on toggle button click with removal of
+    the vertical rotation. */
+    .sidebar-wrapper {
+        margin-left: -260px;
+        transform: rotateY(100deg);
+    }
+    #main-panel {
+        margin-left: 0px;
+        // transform: rotateY(360deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+}

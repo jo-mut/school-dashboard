@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Mail } from '../profile.component';
 
 @Component({
   selector: 'app-mail-detail',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailDetailComponent implements OnInit {
 
-  constructor() { }
+  @Input() mail: Mail;
+
+
+  constructor() { 
+
+  }
 
   ngOnInit() {
+  
   }
 
 }

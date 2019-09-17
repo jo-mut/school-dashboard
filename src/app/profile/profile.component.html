@@ -1,7 +1,7 @@
 <div class="profile">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 mt-3">
+            <div class="col-sm-12 col-md-3 mt-3">
                 <div class="profile-info">
                     <div class="card image">
                         <div class="card-img-top img-fluid image">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-9 mt-3">
+            <div class="col-sm-12 col-md-9 mt-3">
                 <div class="card">
                     <div class="inbox">
                         <div class="container-fluid p-0">
@@ -53,10 +53,12 @@
                                     <div class="inbox-header px-3">
                                         <strong><p>{{mailCount()}} Messages </p></strong>
                                     </div>
-                                    <app-mail *ngFor="let mail of profileMails()" [mail]="mail"></app-mail>
+                                    <app-mail *ngFor="let mail of profileMails()" [mail]="mail" (click)="mailDetail(mail)"></app-mail>
                                 </div>
                                 <div class="col-sm-12 col-md-12 col-lg-7 conversation">
-
+                                    <div class="mail-detail">
+                                        <app-mail-detail [mail]="mail"></app-mail-detail>
+                                    </div>
                                 </div>
 
                             </div>
