@@ -1,51 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navigation/navbar/navbar.component';
-import { SidebarComponent } from './navigation/sidebar/sidebar.component';
-import { FooterComponent } from './navigation/footer/footer.component';
-import { ProfessorComponent } from './professors/professor/professor.component';
-import { StudentComponent } from './students/student/student.component';
-import { ProfileComponent } from './profile/profile.component';
-import { WorkerComponent } from './workers/worker/worker.component';
-import { DepartmentItemComponent } from './departments/department-item/department-item.component';
-import { LibraryItemComponent } from './library/library-item/library-item.component';
+
 import { DepartmentsService } from './services/departments.service';
 import { StudentsService } from './services/students.service';
 import { LibraryService } from './services/library.service';
 import { ProfessorsService } from './services/professors.service';
-import { WorkerService } from './services/worker.service';
-import { MainPanelComponent } from './navigation/main-panel/main-panel.component';
-import { MailComponent } from './profile/mail/mail.component';
-import { MailDetailComponent } from './profile/mail-detail/mail-detail.component';
+import { AdminLayoutModule } from './layouts/admin/admin-routing.module';
+import { AuthLayoutModule } from './layouts/auth/auth-routing.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent,
-    MainPanelComponent,
-    RoutingComponents,
-    ProfessorComponent,
-    StudentComponent, 
-    ProfileComponent,
-    WorkerComponent,
-    DepartmentItemComponent,
-    LibraryItemComponent,
-    MailComponent,
-    MailDetailComponent    
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AdminLayoutModule,
+    AuthLayoutModule
+
   ],
-  providers: [DepartmentsService, StudentsService, LibraryService, ProfessorsService, WorkerService],
+  providers: [DepartmentsService, StudentsService, LibraryService, ProfessorsService],
   bootstrap: [AppComponent]
 })
 

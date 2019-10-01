@@ -1,7 +1,7 @@
 [{
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-b.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -10,7 +10,7 @@
     {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -18,7 +18,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g1.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -26,7 +26,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-b.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -34,7 +34,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g1.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -42,7 +42,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -50,7 +50,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-b.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -58,7 +58,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -66,7 +66,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g1.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -74,7 +74,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-b.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",
@@ -82,7 +82,7 @@
     }, {
         "id": "1",
         "name": "Bob Danson",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/profile-g1.jpg",
         "year": "1st Year",
         "department": "School of Medicine",
         "subject": "Neurology",

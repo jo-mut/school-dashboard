@@ -38,6 +38,9 @@ export class ProfileComponent implements OnInit {
 
   }
 
+  ngOnInit() {
+  }
+
   private firstMail(){
     if (this.profileMails()[0] != null) {
       this.mail = this.profileMails()[0]
@@ -79,7 +82,5 @@ export class ProfileComponent implements OnInit {
     return this.profileMails().length;
   }
 
-  ngOnInit() {
-  }
 
 }

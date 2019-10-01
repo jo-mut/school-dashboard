@@ -26,7 +26,7 @@
     }, {
         "id": "4",
         "name": "School of Arts",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/arts.jpg",
         "students": "600",
         "professors": "15",
         "courses": "30",
@@ -42,7 +42,14 @@
     }, {
         "id": "6",
         "name": "School of Engineering",
-        "image": "assets/images/img.jpg",
+        "image": "assets/images/engine.jpg",
+        "students": "450",
+        "professors": "20",
+        "sub_departments": "5"
+    }, {
+        "id": "6",
+        "name": "School of Environment",
+        "image": "assets/images/environment.jpg",
         "students": "450",
         "professors": "20",
         "sub_departments": "5"

@@ -1,21 +1,26 @@
-#custom-navbar {
+.custom-navbar {
     border-top: 2px solid $bg-secondary;
     background-color: $bg-primary-white;
-    height: 4em;
-    color: $font-color;
-    img {
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-    }
-    li a {
+    #navbar {
+        background-color: $bg-primary-white;
         color: $font-color;
-    }
-    li a:hover {
-        color: $active-link-blue;
-    }
-    .dropdown-menu {
-        max-width: 300px;
-        overflow: hidden;
+        .navbar-toggler {
+            color: $font-color;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+        }
+        li a {
+            color: $font-color;
+        }
+        li a:hover {
+            color: $active-link-blue;
+        }
+        .dropdown-menu {
+            max-width: 300px;
+            overflow: hidden;
+        }
     }
 }

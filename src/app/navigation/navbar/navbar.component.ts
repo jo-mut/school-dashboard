@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 class Notification {
   constructor(
@@ -18,14 +19,11 @@ class Notification {
 export class NavbarComponent implements OnInit {
 
   private hidden: boolean = false
-  private lorem: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Incidunt quibusdam praesentium nostrum molestias illum delectus exercitationem 
-  voluptatem facere provident cumque ad autem temporibus est sed, laborum 
-  perspiciatis, sunt, optio et?`;
+  private lorem: string = `Lorem ipsum dolor sit amet?`;
   private profileImage = "assets/images/img.jpg";
 
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -56,4 +54,9 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  logout() {
+    this.router.navigateByUrl('/sign-in')
+  }
+
+ 
 }

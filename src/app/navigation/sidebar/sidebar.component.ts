@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,19 +8,20 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  private aria_expanded: boolean = false;
 
-  constructor(private element: ElementRef) { }
+  public path: string = '';
+
+  constructor(private activateRoute: ActivatedRoute) { }
 
   ngOnInit() {
-
+    this.activateRoute.url.subscribe(data => {
+      console.log(data);
+    })
   }
 
 
-  getAriaExpansion() {
-    
+  getComponent() {
+   
   }
 
-
- 
 }

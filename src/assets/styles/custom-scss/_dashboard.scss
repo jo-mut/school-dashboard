@@ -50,14 +50,11 @@
             }
         }
     }
-    .stream-dv {
-        height: 300px;
-    }
     .chart-area {
         width: 100%;
         height: 40%;
         position: relative;
-        .canvas {
+        canvas {
             display: inline;
         }
     }
